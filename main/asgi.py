@@ -1,5 +1,5 @@
 """
-ASGI config for django-practice project.
+ASGI config for django_practice project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

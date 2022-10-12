@@ -1,5 +1,5 @@
 """
-WSGI config for django-practice project.
+WSGI config for django_practice project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
