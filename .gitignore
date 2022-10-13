@@ -1,1 +1,10 @@
-.vscode/
+### Python ###
+# Byte-compiled / optimized / DLL files
+**/__pycache__
+*.py[cod]
+
+### Database files ###
+db.sqlite3
+
+### Visual Studio Code ###
+.vscode
