@@ -6,5 +6,6 @@
 ### Database files ###
 db.sqlite3
 
-### Visual Studio Code ###
+### Development environment ###
 .vscode
+.prettierignore

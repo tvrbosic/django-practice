@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2%pl2d00!0$)g5)1e2crjip-@_16gd30roqm9%eo(j%0m#l48w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -56,7 +56,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            #BASE_DIR / 'challenges' / 'templates'
+            BASE_DIR / 'templates'
+            # BASE_DIR / 'challenges' / 'templates'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -119,7 +120,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
