@@ -2,20 +2,17 @@
 {% load static %}
 
 {% block css_files %}
+  <link rel="stylesheet" href="{% static 'blog/header.css' %}">
   <link rel="stylesheet" href="{% static 'blog/index.css' %}">
-{% endblock  %}
+  <link rel="stylesheet" href="{% static 'blog/post.css' %}">
+  {% endblock  %}
 
 {% block title %}
   My Blog
 {% endblock  %}
 
 {% block content %}
-  <header id='main-navigation'>
-    <h1><a href="">Tom's Blog</a></h1>
-    <nav>
-      <a href="">All posts</a>
-    </nav>
-  </header>
+  {% include 'blog/partials/header.html' %}
 
   <section id='welcome'>
     <header>
@@ -29,15 +26,7 @@
     <h2>My Latest Posts</h2>
     <ul>
       <li>
-        <article class='post'>
-          <a href="">
-            <img src="{% static 'blog/images/mountains.jpg' %}" alt="Mountain Hiking">
-            <div class='post__content'>
-              <h3>Mountain Hiking</h3>
-              <p>There is nothing like the views you get when hiking in the mountains! And I was not even prepared what happened while I was enjoying the view! </p>
-            </div>
-          </a>
-        </article>
+        {% include 'blog/partials/post.html' %}
       </li>
     </ul>
   </section>

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'blog/header.css' %}">
+  <link rel="stylesheet" href="{% static 'blog/post-details.css' %}">
+  {% endblock  %}
+
+{% block title %}
+  My Blog
+{% endblock  %}
+
+{% block content %}
+  {% include 'blog/partials/header.html' %}
+
+  <section id='summary'>
+    <h2>Post Title</h2>
+    <article>
+      <img src="{% static 'blog/images/mountains.jpg' %}" alt="Post Title">
+      <address>By Tom</address>
+      <div>
+        Last updated on <time>July 10th</time>
+
+      </div>
+    </article>
+  </section>
+
+  <main>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae maiores cupiditate porro provident numquam sunt quis voluptate fugiat unde, in accusamus recusandae eveniet quas placeat animi corrupti hic ad ex.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, eum nam veritatis possimus consequuntur vero illo dolore sit vitae neque tempora libero asperiores hic perspiciatis ex? Officia quo quaerat labore.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat asperiores temporibus voluptatum molestiae. Natus quaerat quis commodi repellendus repudiandae ullam. Deleniti reprehenderit totam quasi aliquid inventore, doloremque vel ullam.</p>
+  </main>
+{% endblock %}
