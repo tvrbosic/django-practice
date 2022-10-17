@@ -17,24 +17,11 @@
   <section id='all-posts'>
     <h2>Blog Posts</h2>
     <ul>
-      <li>
-        {% include 'blog/partials/post.html' %}
-      </li>
-      <li>
-        {% include 'blog/partials/post.html' %}
-      </li>
-      <li>
-        {% include 'blog/partials/post.html' %}
-      </li>
-      <li>
-        {% include 'blog/partials/post.html' %}
-      </li>
-      <li>
-        {% include 'blog/partials/post.html' %}
-      </li>
-      <li>
-        {% include 'blog/partials/post.html' %}
-      </li>
+      {% for post in posts  %}
+        <li>
+          {% include 'blog/partials/post.html' %}
+        </li>
+      {% endfor %}
     </ul>
   </section>
 {% endblock %}
