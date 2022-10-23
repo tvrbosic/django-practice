@@ -1,4 +1,4 @@
-# React practice project
+# Django practice project
 
 ## Credits
 
